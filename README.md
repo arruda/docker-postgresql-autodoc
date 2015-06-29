@@ -15,7 +15,7 @@ First build the image:
 Then run it:
 
     docker run -d \
-               --link postgresql:db
+               --link postgresql:db \
                -v some/where/to/save/the/pngs/:/data \
                -e DB_ENV_DB="database_name" \
                -e DB_ENV_USER="user" \
